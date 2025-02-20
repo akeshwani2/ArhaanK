@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from '../components/Header'
-const Projects = () => {
+const Blog = () => {
   return (
     <div className="items-center justify-items-center font-[family-name:var(--font-geist-sans)]">
       <Header />
@@ -11,4 +11,4 @@ const Projects = () => {
   )
 }
 
-export default Projects
+export default Blog

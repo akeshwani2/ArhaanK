@@ -1,10 +1,10 @@
 import Link from "next/link";
 import React from "react";
-import { Github, Linkedin, Sparkle } from "lucide-react";
+import { Github, Linkedin } from "lucide-react";
 const Footer = () => {
   return (
-    <footer className="w-full flex items-center justify-between">
-      <div className="container pt-4 pb-4 ">
+    <footer className="w-full px-4 md:px-0 lg:px-0 flex items-center justify-between">
+      <div className="pt-4 pb-6">
         <h1 className="text-4xl justify-start">
           <Link href="/">ak.</Link>
         </h1>

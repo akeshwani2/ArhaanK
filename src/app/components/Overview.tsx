@@ -57,17 +57,17 @@ const Overview = () => {
           <h1 className="text-3xl px-4 pb-2 md:px-0 lg:px-0 md:text-5xl lg:text-8xl tracking-tight w-full text-gray-400">
             Hello, I'm{" "}
             <span className="text-white animate-fade-in-up">Arhaan</span> — a
-            passionate
+            19 year old{" "}
             <span className="text-white animate-fade-in-up-2">
               {" "}
-              developer.
+              passionate founder.
             </span>{" "}
             I'm always trying to build stuff that makes a{" "}
             <span className="text-white animate-fade-in-up-3">
               meaningful difference
             </span>{" "}
-            in the{" "}
-            <span className="text-white animate-fade-in-up-4">world.</span>
+            in people's{" "}
+            <span className="text-white animate-fade-in-up-4">lives.</span>
           </h1>
         </div>
       </div>
@@ -83,6 +83,7 @@ const Overview = () => {
           <p className="text-gray-400 text-sm md:text-lg">
             AI companion for productivity, backed by NVIDIA's Inception Program.
           </p>
+
           <div className="pt-8">
             <button className="bg-transparent border border-white hover:bg-white hover:text-black transition-all duration-200 text-white px-4 py-2 rounded-lg w-fit">
               <a
@@ -175,7 +176,8 @@ const Overview = () => {
             AK Notch
           </h1>
           <p className="text-gray-400 text-sm md:text-lg">
-            MacOS utility with a drag-and-drop tray, and AirDrop integration. 300+ users.
+            MacOS utility with a drag-and-drop tray, and AirDrop integration.
+            300+ users.
           </p>
           <div className="pt-8">
             <button className="bg-transparent border border-white hover:bg-white hover:text-black transition-all duration-200 text-white px-4 py-2 rounded-lg w-fit">
