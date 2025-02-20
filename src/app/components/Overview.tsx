@@ -54,7 +54,7 @@ const Overview = () => {
     <div className="min-h-[150vh] flex flex-col items-center">
       <div className="h-screen flex items-center justify-center">
         <div className="container">
-          <h1 className="text-3xl px-4 pb-2 md:px-0 lg:px-0 md:text-5xl lg:text-8xl tracking-tight w-full text-gray-400">
+          <h1 className="text-3xl px-4 pb-2 md:px-0 lg:px-0 md:text-5xl lg:text-8xl tracking-tight w-full text-gray-400 animate-fade-in-up">
             Hello, I'm{" "}
             <span className="text-white animate-fade-in-up">Arhaan</span> — a
             19 year old{" "}
