@@ -103,7 +103,7 @@ const Overview = () => {
           className="order-2 border border-gray-600 border-opacity-50 rounded-lg hover:scale-105 transition-all duration-300 cursor-pointer"
           onClick={() =>
             setExpandedVideo(
-              "https://my-website-videos-akport.s3.us-east-1.amazonaws.com/Personalized+Chrome+Extension.mp4"
+              "https://my-website-videos-akport.s3.us-east-1.amazonaws.com/Arhaan's+Video.mp4"
             )
           }
         >
@@ -116,7 +116,7 @@ const Overview = () => {
             className="rounded-lg"
           >
             <source
-              src="https://my-website-videos-akport.s3.us-east-1.amazonaws.com/Personalized+Chrome+Extension.mp4"
+              src="https://my-website-videos-akport.s3.us-east-1.amazonaws.com/Arhaan's+Video.mp4"
               type="video/mp4"
             />
           </video>
