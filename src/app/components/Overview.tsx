@@ -31,10 +31,10 @@ const Overview = () => {
     onClose: () => void;
   }) => (
     <div
-      className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4"
+      className="fixed inset-0 bg-black bg-opacity-90 z-50 flex animate-fade-in-up-fast transition-opacity items-center justify-center p-4"
       onClick={onClose}
     >
-      <div className="w-full max-w-6xl">
+      <div className="w-full max-w-6xl border border-gray-600 border-opacity-50 rounded-lg">
         <video
           autoPlay
           muted
@@ -54,10 +54,10 @@ const Overview = () => {
     <div className="min-h-[150vh] flex flex-col items-center">
       <div className="h-screen flex items-center justify-center">
         <div className="container">
-          <h1 className="text-3xl px-4 pb-2 md:px-0 lg:px-0 md:text-5xl lg:text-8xl tracking-tight w-full text-gray-400 animate-fade-in-up">
+          <h1 className="text-3xl px-4 pb-4 md:px-0 lg:px-0 md:text-5xl lg:text-8xl tracking-tight w-full text-gray-400 animate-fade-in-up">
             Hello, I'm{" "}
             <span className="text-white animate-fade-in-up">Arhaan</span> — a
-            19 year old{" "}
+            20 year old{" "}
             <span className="text-white animate-fade-in-up-2">
               {" "}
               passionate founder.
@@ -77,6 +77,9 @@ const Overview = () => {
         }`}
       >
         <div className="flex flex-col gap-2 order-1">
+        <p className="text-sm text-gray-400">
+            2024
+          </p>
           <h1 className="text-2xl md:text-4xl text-white tracking-tight">
             Lyra
           </h1>
@@ -84,7 +87,7 @@ const Overview = () => {
             AI companion for productivity, backed by NVIDIA's Inception Program.
           </p>
 
-          <div className="pt-8">
+          <div className="pt-4">
             <button className="bg-transparent border border-white hover:bg-white hover:text-black transition-all duration-200 text-white px-4 py-2 rounded-lg w-fit">
               <a
                 href="https://lyra.services"
@@ -97,7 +100,7 @@ const Overview = () => {
           </div>
         </div>
         <div
-          className="order-2 cursor-zoom-in"
+          className="order-2 border border-gray-600 border-opacity-50 rounded-lg hover:scale-105 transition-all duration-300 cursor-pointer"
           onClick={() =>
             setExpandedVideo(
               "https://my-website-videos-akport.s3.us-east-1.amazonaws.com/Personalized+Chrome+Extension.mp4"
@@ -125,13 +128,16 @@ const Overview = () => {
         }`}
       >
         <div className="flex flex-col gap-2 order-1">
+        <p className="text-sm text-gray-400">
+            2025
+          </p>
           <h1 className="text-2xl md:text-4xl text-white tracking-tight">
             Sunday
           </h1>
           <p className="text-gray-400 text-sm md:text-lg">
             AI-powered web, email, & calendar assistant. $6,000+ raised.
           </p>
-          <div className="pt-8">
+          <div className="pt-4">
             <button className="bg-transparent border border-white hover:bg-white hover:text-black transition-all duration-200 text-white px-4 py-2 rounded-lg w-fit">
               <a
                 href="https://sundays.services"
@@ -144,7 +150,7 @@ const Overview = () => {
           </div>
         </div>
         <div
-          className="order-2 cursor-zoom-in"
+          className="order-2 px-2 border border-gray-600 border-opacity-50 rounded-lg hover:scale-105 transition-all duration-300 cursor-pointer"
           onClick={() =>
             setExpandedVideo(
               "https://my-website-videos-akport.s3.us-east-1.amazonaws.com/Introducing+Sundae+AI+Assistant.mp4"
@@ -172,6 +178,9 @@ const Overview = () => {
         }`}
       >
         <div className="flex flex-col gap-2 order-1">
+        <p className="text-sm text-gray-400">
+            2024
+          </p>
           <h1 className="text-2xl md:text-4xl text-white tracking-tight">
             AK Notch
           </h1>
@@ -192,7 +201,7 @@ const Overview = () => {
           </div>
         </div>
         <div
-          className="order-2 cursor-zoom-in"
+          className="order-2 px-2 border border-gray-600 border-opacity-50 rounded-lg hover:scale-105 transition-all duration-300 cursor-pointer"
           onClick={() =>
             setExpandedVideo(
               "https://my-website-videos-akport.s3.us-east-1.amazonaws.com/Introducing+Sundae+AI+Assistant.mp4"
