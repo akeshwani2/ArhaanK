@@ -23,11 +23,11 @@ const Nav = () => {
             Overview
           </Link>
           <Link 
-            href='/experience' 
-            className={`relative underline-link hover:text-gray-400 ${activeRoute === '/experience' ? 'active' : ''}`}
-            onClick={() => setActiveRoute('/experience')}
+            href='/accomplishments' 
+            className={`relative underline-link hover:text-gray-400 ${activeRoute === '/accomplishments' ? 'active' : ''}`}
+            onClick={() => setActiveRoute('/accomplishments')}
           >
-            Experience
+            Accomplishments
           </Link>
           <Link 
             href='/journey' 

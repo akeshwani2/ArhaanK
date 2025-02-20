@@ -55,8 +55,9 @@ const Experience = () => {
     </div>
   );
   return (
-    <div className="items-center tracking-tight animate-fade-in-up-2 justify-items-center">
+    <div className="items-center tracking-tight justify-items-center">
       <Header />
+      <div className="animate-fade-in-up-2">
       <div className="px-4 border-b border-gray-600 border-opacity-50 md:px-0 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 container pb-10 pt-10 transition-opacity duration-500">
         <div className="flex flex-col gap-2 order-1">
           <p className="text-sm text-gray-400">
@@ -66,7 +67,7 @@ const Experience = () => {
             Lyra
           </h1>
           <p className="text-gray-400 text-sm md:text-lg">
-            AI companion for productivity, backed by NVIDIA's Inception Program.
+            AI companion for productivity, backed by NVIDIA's Inception Program, $5,000+ raised.
           </p>
 
           <div className="pt-8">
@@ -281,6 +282,8 @@ const Experience = () => {
             />
           </video>
         </div>
+        </div>
+
       </div>
 
       {expandedVideo && (
