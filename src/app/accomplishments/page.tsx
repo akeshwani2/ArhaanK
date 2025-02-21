@@ -138,15 +138,17 @@ const Experience = () => {
             className="h-[875px] mt-2 w-full object-contain group-hover:blur-sm transition-all duration-300"
           />
           <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-all duration-300">
-            <button className="bg-black hover:bg-black/50 border border-white hover:text-white transition-all duration-200 text-white px-6 py-3 rounded-lg">
-              <a
+          <a
                 href="https://drive.google.com/file/d/1H2FsXPrxPJodQSmTcfIa1ns_cDLlvTEA/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
               >
+            <button className="bg-black hover:bg-black/50 border border-white hover:text-white transition-all duration-200 text-white px-6 py-3 rounded-lg">
+
                 View
-              </a>
             </button>
+            </a>
+
           </div>
         </div>
       </div>
