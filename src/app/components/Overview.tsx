@@ -80,7 +80,9 @@ const Overview = () => {
         <p className="text-sm text-gray-400">
             2024
           </p>
-          <h1 className="text-2xl md:text-4xl text-white tracking-tight">
+          <h1 className="text-2xl md:text-4xl text-white tracking-tight flex items-center gap-2">
+          <img src="/logo-copy.svg" className="w-fit max-h-[30px] border border-gray-600 border-opacity-50 rounded-sm" alt="Lyra" />
+
             Lyra
           </h1>
           <p className="text-gray-400 text-sm md:text-lg">
@@ -103,7 +105,7 @@ const Overview = () => {
           className="order-2 border border-gray-600 border-opacity-50 rounded-lg hover:scale-105 transition-all duration-300 cursor-pointer"
           onClick={() =>
             setExpandedVideo(
-              "https://my-website-videos-akport.s3.us-east-1.amazonaws.com/Arhaan's+Video.mp4"
+              "https://my-website-videos-akport.s3.us-east-1.amazonaws.com/My+Movie.mp4"
             )
           }
         >
@@ -116,7 +118,7 @@ const Overview = () => {
             className="rounded-lg"
           >
             <source
-              src="https://my-website-videos-akport.s3.us-east-1.amazonaws.com/Arhaan's+Video.mp4"
+              src="https://my-website-videos-akport.s3.us-east-1.amazonaws.com/My+Movie.mp4"
               type="video/mp4"
             />
           </video>
@@ -131,7 +133,9 @@ const Overview = () => {
         <p className="text-sm text-gray-400">
             2025
           </p>
-          <h1 className="text-2xl md:text-4xl text-white tracking-tight">
+          <h1 className="text-2xl md:text-4xl text-white tracking-tight flex items-center gap-2">
+          <img src="/SundayLogo.png" className="w-fit max-h-[30px]" alt="Sunday" />
+
             Sunday
           </h1>
           <p className="text-gray-400 text-sm md:text-lg">
@@ -150,10 +154,10 @@ const Overview = () => {
           </div>
         </div>
         <div
-          className="order-2 px-2 border border-gray-600 border-opacity-50 rounded-lg hover:scale-105 transition-all duration-300 cursor-pointer"
+          className="order-2 border border-gray-600 border-opacity-50 rounded-lg hover:scale-105 transition-all duration-300 cursor-pointer"
           onClick={() =>
             setExpandedVideo(
-              "https://my-website-videos-akport.s3.us-east-1.amazonaws.com/Introducing+Sundae+AI+Assistant.mp4"
+              "https://my-website-videos-akport.s3.us-east-1.amazonaws.com/SundayDem.mp4"
             )
           }
         >
@@ -166,7 +170,7 @@ const Overview = () => {
             className="rounded-lg"
           >
             <source
-              src="https://my-website-videos-akport.s3.us-east-1.amazonaws.com/Introducing+Sundae+AI+Assistant.mp4"
+              src="https://my-website-videos-akport.s3.us-east-1.amazonaws.com/SundayDem.mp4"
               type="video/mp4"
             />
           </video>
@@ -188,7 +192,7 @@ const Overview = () => {
             MacOS utility with a drag-and-drop tray, and AirDrop integration.
             300+ users.
           </p>
-          <div className="pt-8">
+          <div className="pt-4">
             <button className="bg-transparent border border-white hover:bg-white hover:text-black transition-all duration-200 text-white px-4 py-2 rounded-lg w-fit">
               <a
                 href="https://github.com/akeshwani2/AK-Notch"
@@ -204,7 +208,7 @@ const Overview = () => {
           className="order-2 px-2 border border-gray-600 border-opacity-50 rounded-lg hover:scale-105 transition-all duration-300 cursor-pointer"
           onClick={() =>
             setExpandedVideo(
-              "https://my-website-videos-akport.s3.us-east-1.amazonaws.com/Introducing+Sundae+AI+Assistant.mp4"
+              "https://my-website-videos-akport.s3.us-east-1.amazonaws.com/AKNotch.mp4"
             )
           }
         >
@@ -217,7 +221,7 @@ const Overview = () => {
             className="rounded-lg"
           >
             <source
-              src="https://my-website-videos-akport.s3.us-east-1.amazonaws.com/Introducing+Sundae+AI+Assistant.mp4"
+              src="https://my-website-videos-akport.s3.us-east-1.amazonaws.com/AKNotch.mp4"
               type="video/mp4"
             />
           </video>

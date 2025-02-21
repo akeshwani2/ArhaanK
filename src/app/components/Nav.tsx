@@ -14,7 +14,7 @@ const Nav = () => {
   return (
     <div className='flex justify-between items-center'>
 
-      <nav className='flex-1 flex justify-center items-center gap-8 text-md tracking-tight sticky top-0 z-50 backdrop-blur-md pt-6 pb-6'>
+      <nav className='flex-1 flex justify-center items-center gap-8 text-xs md:text-sm tracking-tight sticky top-0 z-50 backdrop-blur-md pt-6 pb-6'>
           <Link 
             href='/' 
             className={`relative underline-link hover:text-gray-400 ${activeRoute === '/' ? 'active' : ''}`}
@@ -23,18 +23,18 @@ const Nav = () => {
             Overview
           </Link>
           <Link 
-            href='/accomplishments' 
-            className={`relative underline-link hover:text-gray-400 ${activeRoute === '/accomplishments' ? 'active' : ''}`}
-            onClick={() => setActiveRoute('/accomplishments')}
-          >
-            Accomplishments
-          </Link>
-          <Link 
             href='/journey' 
             className={`relative underline-link hover:text-gray-400 ${activeRoute === '/journey' ? 'active' : ''}`}
             onClick={() => setActiveRoute('/journey')}
           >
             Journey
+          </Link>
+          <Link 
+            href='/accomplishments' 
+            className={`relative underline-link hover:text-gray-400 ${activeRoute === '/accomplishments' ? 'active' : ''}`}
+            onClick={() => setActiveRoute('/accomplishments')}
+          >
+            Accomplishments
           </Link>
           <Link 
             href='/contact' 

@@ -3,9 +3,7 @@ import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 const Experience = () => {
-  const [expandedVideo, setExpandedVideo] = React.useState<string | null>(null);
   const [expandedImage, setExpandedImage] = React.useState<string | null>(null);
-
   const ImageModal = ({
     src,
     onClose,
@@ -18,60 +16,44 @@ const Experience = () => {
       onClick={onClose}
     >
       <div className="w-full max-w-6xl border border-gray-600 border-opacity-50 rounded-lg">
-        <img 
-          src={src} 
-          alt="Expanded" 
-          className="w-full rounded-lg" 
-        />
+        <img src={src} alt="Expanded" className="w-full rounded-lg" />
       </div>
     </div>
   );
-  
 
-  const VideoModal = ({
-    src,
-    onClose,
-  }: {
-    src: string;
-    onClose: () => void;
-  }) => (
-    <div
-      className="fixed inset-0 bg-black animate-fade-in-up-fast transition-opacity bg-opacity-90 z-50 flex items-center justify-center p-4"
-      onClick={onClose}
-    >
-      <div className="w-full border border-gray-600 border-opacity-50 rounded-lg px-2 max-w-6xl">
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="auto"
-          className="w-full rounded-lg"
-          onClick={(e) => e.stopPropagation()}
-        >
-          <source src={src} type="video/mp4" />
-        </video>
-      </div>
-    </div>
-  );
   return (
     <div className="items-center tracking-tight justify-items-center">
       <Header />
-      <div className="animate-fade-in-up-2">
-      <div className="px-4 border-b border-gray-600 border-opacity-50 md:px-0 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 container pb-10 pt-10 transition-opacity duration-500">
+
+      <div className="px-4 animate-fade-in-up-2 border-b border-gray-600 border-opacity-50 md:px-0 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 container pb-10 pt-10 transition-opacity duration-500">
         <div className="flex flex-col gap-2 order-1">
-          <p className="text-sm text-gray-400">
-            2024
-          </p>
-          <h1 className="text-2xl md:text-4xl text-white tracking-tight">
+          <p className="text-sm text-gray-400">2024</p>
+          <h1 className="text-xl md:text-2xl text-white tracking-tight flex items-center gap-2">
+            <img src="/logo-copy.svg" className="w-fit max-h-[25px] border border-gray-600 border-opacity-50 rounded-sm" alt="Lyra" />
             Lyra
           </h1>
-          <p className="text-gray-400 text-sm md:text-lg">
-            AI companion for productivity, backed by NVIDIA's Inception Program, $5,000+ raised.
+          <p className="text-gray-400 text-sm md:text-md">
+            My passion project turned productivity powerhouse. Lyra started with
+            a simple idea: to make productivity effortless and intuitive. With the backing of NVIDIA's Inception Program, and our investors, I am working hard to turn that vision into a reality. Lyra currently helps over 300+ users' streamline their academic and professional lives.
           </p>
-
-          <div className="pt-8">
-            <button className="bg-transparent border border-white hover:bg-white hover:text-black transition-all duration-200 text-white px-4 py-2 rounded-lg w-fit">
+          <div className="pt-2">
+            <div
+              className="hover:scale-105 border border-gray-600 border-opacity-50 rounded-lg transition-all duration-300 cursor-pointer"
+              onClick={() =>
+                setExpandedImage(
+                  "https://my-website-videos-akport.s3.us-east-1.amazonaws.com/users.png"
+                )
+              }
+            >
+              <img
+                src="https://my-website-videos-akport.s3.us-east-1.amazonaws.com/users.png"
+                alt="Lyra"
+                className="w-fit max-h-[100px]"
+              />
+            </div>
+          </div>
+          <div className="pt-4 pb-4">
+            <button className="bg-transparent hover:scale-110 border border-white hover:bg-white hover:text-black transition-all duration-200 text-white px-2 py-1 rounded-lg w-fit">
               <a
                 href="https://lyra.services"
                 target="_blank"
@@ -81,131 +63,86 @@ const Experience = () => {
               </a>
             </button>
           </div>
-        </div>
-        <div
-          className="order-2 cursor-pointer hover:scale-105 transition-all duration-300 border border-gray-600 border-opacity-50 rounded-lg"
-          onClick={() =>
-            setExpandedVideo(
-              "https://my-website-videos-akport.s3.us-east-1.amazonaws.com/Arhaan's+Video.mp4"
-            )
-          }
-        >
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="auto"
-            className="rounded-lg"
-          >
-            <source
-              src="https://my-website-videos-akport.s3.us-east-1.amazonaws.com/Arhaan's+Video.mp4"
-              type="video/mp4"
-            />
-          </video>
-        </div>
-      </div>
-      <div className="px-4 border-b border-t border-gray-600 border-opacity-50 md:px-0 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 container pb-10 pt-10 transition-opacity duration-500">
-        <div className="flex flex-col gap-2 order-1">
-        <p className="text-sm text-gray-400">
-            2025
-          </p>
-          <h1 className="text-2xl md:text-4xl text-white tracking-tight">
-            Sunday
-          </h1>
-          <p className="text-gray-400 text-sm md:text-lg">
-            AI-powered web, email, & calendar assistant. $6,000+ raised.
-          </p>
-          <div className="pt-8">
-            <button className="bg-transparent border border-white hover:bg-white hover:text-black transition-all duration-200 text-white px-4 py-2 rounded-lg w-fit">
-              <a
-                href="https://sundays.services"
-                target="_blank"
-                rel="noopener noreferrer"
+
+          {/* Item 2 */}
+          <div className="flex pt-4 border-t border-gray-600 border-opacity-50 flex-col gap-2 order-1">
+            <p className="text-sm text-gray-400">2025</p>
+
+            <h1 className="text-xl md:text-2xl text-white tracking-tight flex items-center gap-2">
+            <img src="/SundayLogo.png" className="w-fit max-h-[25px]" alt="Sunday" />
+
+              Sunday
+            </h1>
+            <p className="text-gray-400 text-sm md:text-md">
+              An AI-powered web, email, & calendar assistant. I realized how much time I spent scrolling through a packed inbox, so I built Sunday to help me get through it faster. Sunday can help you get through your inbox faster, and make sure you don't miss important emails, summarize your emails, adjust your calendar, and has a Perplexity like interface to surf the web, all in one place.
+            </p>
+            {/* <div className="pt-2">
+              <div
+                className="hover:scale-105 border border-gray-600 border-opacity-50 rounded-lg transition-all duration-300 cursor-pointer"
+                onClick={() =>
+                  setExpandedImage(
+                    "https://my-website-videos-akport.s3.us-east-1.amazonaws.com/users.png"
+                  )
+                }
               >
-                View
-              </a>
-            </button>
+                <img
+                  src="https://my-website-videos-akport.s3.us-east-1.amazonaws.com/users.png"
+                  alt="Lyra"
+                  className="w-fit max-h-[100px]"
+                />
+              </div>
+            </div> */}
+            <div className="pt-4 pb-4">
+              <button className="bg-transparent hover:scale-110 border border-white hover:bg-white hover:text-black transition-all duration-200 text-white px-2 py-1 rounded-lg w-fit">
+                <a
+                  href="https://sundays.services"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View
+                </a>
+              </button>
+            </div>
+
+            {/* Item 3 */}
+            <div className="flex pt-4 border-t border-gray-600 border-opacity-50 flex-col gap-2 order-1">
+              <p className="text-sm text-gray-400">2024</p>
+              <h1 className="text-xl md:text-2xl text-white tracking-tight">
+                AK Notch
+              </h1>
+              <p className="text-gray-400 text-sm md:text-md">
+                A sleek and intuitive macOS utility designed to enhance your
+                productivity. It provides a convenient drag-and-drop tray for
+                quick file handling/storing and transfer, AirDrop integration,
+                and includes customizable settings to suit your workflow.
+                Currently, over 300+ users use AK Notch in their daily workflow.
+              </p>
+              <div className="pt-4">
+                <button className="bg-transparent hover:scale-110 border border-white hover:bg-white hover:text-black transition-all duration-200 text-white px-2 py-1 rounded-lg w-fit">
+                  <a
+                    href="https://github.com/akeshwani2/AK-Notch"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View
+                  </a>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
-        <div
-          className="order-2 px-2 cursor-pointer hover:scale-105 transition-all duration-300 border border-gray-600 border-opacity-50 rounded-lg"
-          onClick={() =>
-            setExpandedVideo(
-              "https://my-website-videos-akport.s3.us-east-1.amazonaws.com/Introducing+Sundae+AI+Assistant.mp4"
-            )
-          }
-        >
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="auto"
-            className="rounded-lg"
-          >
-            <source
-              src="https://my-website-videos-akport.s3.us-east-1.amazonaws.com/Introducing+Sundae+AI+Assistant.mp4"
-              type="video/mp4"
-            />
-          </video>
-        </div>
-      </div>
-      
-      <div className="px-4 border-b border-t border-gray-600 border-opacity-50 md:px-0 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 container pb-10 pt-10 transition-opacity duration-500">
-        <div className="flex flex-col gap-2 order-1">
-        <p className="text-sm text-gray-400">
-            2025
-          </p>
-          <h1 className="text-2xl md:text-4xl text-white tracking-tight">
-            EVO
-          </h1>
-          <p className="text-gray-400 text-sm md:text-lg">
-            AI agent that processes messages through a sophisticated pipeline,
-            leveraging various tools and APIs to provide intelligent responses.
-          </p>
-          <div className="pt-8">
-            <button className="bg-transparent border border-white hover:bg-white hover:text-black transition-all duration-200 text-white px-4 py-2 rounded-lg w-fit">
-              <a
-                href="https://ev0.xyz"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                View
-              </a>
-            </button>
-          </div>
-        </div>
-        <div
-          className="order-2 cursor-pointer hover:scale-105 transition-all duration-300 border border-gray-600 border-opacity-50 rounded-lg"
-          onClick={() =>
-            setExpandedImage("/evoImage.png")
-          }
-        >
+
+        {/* Resume */}
+        <div className="order-2 group relative hover:scale-105 transition-all duration-300">
           <img
-            src="/evoImage.png"
-            alt="EVO"
-            height={500}
-            className="rounded-lg "
+            src="https://my-website-videos-akport.s3.us-east-1.amazonaws.com/resumeImage.png"
+            alt="resume"
+            className="h-[875px] mt-2 w-full object-contain group-hover:blur-sm transition-all duration-300"
           />
-        </div>
-      </div>
-      <div className="px-4 border-b border-t border-gray-600 border-opacity-50 md:px-0 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 container pb-10 pt-10 transition-opacity duration-500">
-        <div className="flex flex-col gap-2 order-1">
-        <p className="text-sm text-gray-400">
-            2024
-          </p>
-          <h1 className="text-2xl md:text-4xl text-white tracking-tight">
-            AK Notch
-          </h1>
-          <p className="text-gray-400 text-sm md:text-lg">
-            MacOS utility with a drag-and-drop tray, and AirDrop integration.
-            300+ users.
-          </p>
-          <div className="pt-8">
-            <button className="bg-transparent border border-white hover:bg-white hover:text-black transition-all duration-200 text-white px-4 py-2 rounded-lg w-fit">
+          <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-all duration-300">
+            <button className="bg-black hover:bg-black/50 border border-white hover:text-white transition-all duration-200 text-white px-6 py-3 rounded-lg">
               <a
-                href="https://github.com/akeshwani2/AK-Notch"
+                href="https://drive.google.com/file/d/1H2FsXPrxPJodQSmTcfIa1ns_cDLlvTEA/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -214,93 +151,16 @@ const Experience = () => {
             </button>
           </div>
         </div>
-        <div
-          className="order-2 px-2 cursor-pointer hover:scale-105 transition-all duration-300 border border-gray-600 border-opacity-50 rounded-lg"
-          onClick={() =>
-            setExpandedVideo(
-              "https://my-website-videos-akport.s3.us-east-1.amazonaws.com/Introducing+Sundae+AI+Assistant.mp4"
-            )
-          }
-        >
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="auto"
-            className="rounded-lg"
-          >
-            <source
-              src="https://my-website-videos-akport.s3.us-east-1.amazonaws.com/Introducing+Sundae+AI+Assistant.mp4"
-              type="video/mp4"
-            />
-          </video>
-        </div>
       </div>
-      <div className="px-4 border-b border-t border-gray-600 border-opacity-50 md:px-0 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 container pb-10 pt-10 transition-opacity duration-500">
-        <div className="flex flex-col gap-2 order-1">
-        <p className="text-sm text-gray-400">
-            2024
-          </p>
-          <h1 className="text-2xl md:text-4xl text-white tracking-tight">
-            JPMorgan Chase & Co.
-          </h1>
-          <p className="text-gray-400 text-sm md:text-lg">
-            Software Engineering Intern.
-          </p>
-          {/* <div className="pt-8">
-            <button className="bg-transparent border border-white hover:bg-white hover:text-black transition-all duration-200 text-white px-4 py-2 rounded-lg w-fit">
-              <a
-                href="https://github.com/akeshwani2/AK-Notch"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                View
-              </a>
-            </button>
-          </div> */}
-        </div>
-        <div
-          className="order-2 px-2 cursor-pointer hover:scale-105 transition-all duration-300 border border-gray-600 border-opacity-50 rounded-lg"
-          onClick={() =>
-            setExpandedVideo(
-              "https://my-website-videos-akport.s3.us-east-1.amazonaws.com/Introducing+Sundae+AI+Assistant.mp4"
-            )
-          }
-        >
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="auto"
-            className="rounded-lg"
-          >
-            <source
-              src="https://my-website-videos-akport.s3.us-east-1.amazonaws.com/Introducing+Sundae+AI+Assistant.mp4"
-              type="video/mp4"
-            />
-          </video>
-        </div>
-        </div>
-
+      <div className="w-full md:px-24">
+        <Footer />
       </div>
-
-      {expandedVideo && (
-        <VideoModal
-          src={expandedVideo}
-          onClose={() => setExpandedVideo(null)}
-        />
-      )}
       {expandedImage && (
         <ImageModal
           src={expandedImage}
           onClose={() => setExpandedImage(null)}
         />
       )}
-      <div className="w-full md:px-24">
-        <Footer />
-      </div>
     </div>
   );
 };
