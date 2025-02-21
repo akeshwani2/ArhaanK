@@ -62,7 +62,7 @@ const Overview = () => {
               {" "}
               passionate founder.
             </span>{" "}
-            I'm always trying to build stuff that makes a{" "}
+            I'm always trying to build things that make a{" "}
             <span className="text-white animate-fade-in-up-3">
               meaningful difference
             </span>{" "}
@@ -81,7 +81,6 @@ const Overview = () => {
             2024
           </p>
           <h1 className="text-2xl md:text-4xl text-white tracking-tight flex items-center gap-2">
-          <img src="/logo-copy.svg" className="w-fit max-h-[30px] border border-gray-600 border-opacity-50 rounded-sm" alt="Lyra" />
 
             Lyra
           </h1>
@@ -134,7 +133,6 @@ const Overview = () => {
             2025
           </p>
           <h1 className="text-2xl md:text-4xl text-white tracking-tight flex items-center gap-2">
-          <img src="/SundayLogo.png" className="w-fit max-h-[30px]" alt="Sunday" />
 
             Sunday
           </h1>

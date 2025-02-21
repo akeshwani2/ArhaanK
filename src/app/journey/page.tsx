@@ -57,11 +57,7 @@ const Experience = () => {
           <div className="flex flex-col gap-2 order-1">
             <p className="text-sm text-gray-400">2024</p>
             <h1 className="text-2xl md:text-4xl text-white tracking-tight flex items-center gap-2">
-              <img
-                src="/logo-copy.svg"
-                className="w-fit max-h-[30px] border border-gray-600 border-opacity-50 rounded-sm"
-                alt="Lyra"
-              />
+
               Lyra
             </h1>
             <p className="text-gray-400 text-sm md:text-lg">
@@ -108,11 +104,7 @@ const Experience = () => {
           <div className="flex flex-col gap-2 order-1">
             <p className="text-sm text-gray-400">2025</p>
             <h1 className="text-2xl md:text-4xl text-white tracking-tight flex items-center gap-2">
-              <img
-                src="/SundayLogo.png"
-                className="w-fit max-h-[30px]"
-                alt="Sunday"
-              />
+
               Sunday
             </h1>
             <p className="text-gray-400 text-sm md:text-lg">
@@ -158,11 +150,6 @@ const Experience = () => {
           <div className="flex flex-col gap-2 order-1">
             <p className="text-sm text-gray-400">2025</p>
             <h1 className="text-2xl md:text-4xl text-white tracking-tight flex items-center gap-2">
-              <img
-                src="/evoLogo.png"
-                className="w-fit max-h-[30px] border border-gray-600 border-opacity-50 rounded-sm"
-                alt="Lyra"
-              />
               EVO
             </h1>
             <p className="text-gray-400 text-sm md:text-lg">
