@@ -41,7 +41,7 @@ const Nav = () => {
             className={`relative underline-link hover:text-gray-400 ${activeRoute === '/contact' ? 'active' : ''}`}
             onClick={() => setActiveRoute('/contact')}
           >
-            Contact
+            Chat
           </Link>
       </nav>
     </div>

@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="w-full px-4 md:px-0 lg:px-0 flex items-center justify-between">
       <div className="pt-4 pb-6">
-        <h1 className="text-4xl justify-start">
+        <h1 className="text-3xl justify-start">
           <Link href="/">ak.</Link>
         </h1>
       </div>
