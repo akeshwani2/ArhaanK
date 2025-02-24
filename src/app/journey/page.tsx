@@ -2,6 +2,7 @@
 import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Link from "next/link";
 const Experience = () => {
   const [expandedVideo, setExpandedVideo] = React.useState<string | null>(null);
   const [expandedImage, setExpandedImage] = React.useState<string | null>(null);
@@ -66,15 +67,12 @@ const Experience = () => {
             </p>
 
             <div className="pt-4">
+              <Link href="https://lyra.services" target="_blank" rel="noopener noreferrer">
               <button className="bg-transparent border border-white hover:bg-white hover:text-black transition-all duration-200 text-white px-4 py-2 rounded-lg w-fit">
-                <a
-                  href="https://lyra.services"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+
                   View
-                </a>
               </button>
+              </Link>
             </div>
           </div>
           <div
@@ -111,15 +109,12 @@ const Experience = () => {
               AI-powered web, email, & calendar assistant. $6,000+ raised.
             </p>
             <div className="pt-4">
+              <Link href="https://sundays.services" target="_blank" rel="noopener noreferrer">
               <button className="bg-transparent border border-white hover:bg-white hover:text-black transition-all duration-200 text-white px-4 py-2 rounded-lg w-fit">
-                <a
-                  href="https://sundays.services"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+
                   View
-                </a>
               </button>
+              </Link>
             </div>
           </div>
           <div
@@ -158,15 +153,12 @@ const Experience = () => {
               responses.
             </p>
             <div className="pt-4">
+              <Link href="https://ev0.xyz" target="_blank" rel="noopener noreferrer">
               <button className="bg-transparent border border-white hover:bg-white hover:text-black transition-all duration-200 text-white px-4 py-2 rounded-lg w-fit">
-                <a
-                  href="https://ev0.xyz"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+
                   View
-                </a>
               </button>
+              </Link>
             </div>
           </div>
           <div
@@ -192,15 +184,12 @@ const Experience = () => {
               300+ users.
             </p>
             <div className="pt-4">
+              <Link href="https://github.com/akeshwani2/AK-Notch" target="_blank" rel="noopener noreferrer">
               <button className="bg-transparent border border-white hover:bg-white hover:text-black transition-all duration-200 text-white px-4 py-2 rounded-lg w-fit">
-                <a
-                  href="https://github.com/akeshwani2/AK-Notch"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+
                   View
-                </a>
               </button>
+              </Link>
             </div>
           </div>
           <div

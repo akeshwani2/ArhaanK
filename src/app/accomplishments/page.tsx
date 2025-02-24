@@ -2,6 +2,7 @@
 import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Link from "next/link";
 const Experience = () => {
   const [expandedImage, setExpandedImage] = React.useState<string | null>(null);
   const ImageModal = ({
@@ -52,15 +53,12 @@ const Experience = () => {
             </div>
           </div>
           <div className="pt-4 pb-4">
+            <Link href="https://lyra.services" target="_blank" rel="noopener noreferrer">
             <button className="bg-transparent hover:scale-110 border border-white hover:bg-white hover:text-black transition-all duration-200 text-white px-2 py-1 rounded-lg w-fit">
-              <a
-                href="https://lyra.services"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+            
                 View
-              </a>
             </button>
+            </Link>
           </div>
 
           {/* Item 2 */}
@@ -91,15 +89,12 @@ const Experience = () => {
               </div>
             </div> */}
             <div className="pt-4 pb-4">
+              <Link href="https://sundays.services" target="_blank" rel="noopener noreferrer">
               <button className="bg-transparent hover:scale-110 border border-white hover:bg-white hover:text-black transition-all duration-200 text-white px-2 py-1 rounded-lg w-fit">
-                <a
-                  href="https://sundays.services"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+
                   View
-                </a>
               </button>
+              </Link>
             </div>
 
             {/* Item 3 */}
@@ -116,15 +111,12 @@ const Experience = () => {
                 Currently, over 300+ users use AK Notch in their daily workflow.
               </p>
               <div className="pt-4">
+                <Link href="https://github.com/akeshwani2/AK-Notch" target="_blank" rel="noopener noreferrer">
                 <button className="bg-transparent hover:scale-110 border border-white hover:bg-white hover:text-black transition-all duration-200 text-white px-2 py-1 rounded-lg w-fit">
-                  <a
-                    href="https://github.com/akeshwani2/AK-Notch"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+
                     View
-                  </a>
                 </button>
+                </Link>
               </div>
             </div>
           </div>
