@@ -54,20 +54,18 @@ const Overview = () => {
     <div className="min-h-[150vh] flex flex-col items-center">
       <div className="h-screen flex items-center justify-center">
         <div className="container">
-          <h1 className="text-3xl px-4 pb-4 md:px-0 lg:px-0 md:text-5xl lg:text-8xl tracking-tight w-full text-gray-400 animate-fade-in-up">
-            Hello, I'm{" "}
-            <span className="text-white animate-fade-in-up">Arhaan</span> — a
-            20 year old{" "}
-            <span className="text-white animate-fade-in-up-2">
-              {" "}
-              passionate founder.
-            </span>{" "}
-            I'm always trying to build things that make a{" "}
+          <h1 className="text-3xl px-8 pb-12 md:px-0 lg:px-12 md:text-5xl lg:text-7xl tracking-tight w-full text-gray-400 animate-fade-in-up">
+            Hi, I'm{" "}
+            <span className="text-white animate-fade-in-up">Arhaan.</span> I try
+            to build projects that aim to solve{" "}
             <span className="text-white animate-fade-in-up-3">
+              real problems.
+            </span>{" "}
+            I have always been passionate about making a{" "}
+            <span className="text-white animate-fade-in-up-4">
               meaningful difference
             </span>{" "}
-            in people's{" "}
-            <span className="text-white animate-fade-in-up-4">lives.</span>
+            in people's lives.
           </h1>
         </div>
       </div>
@@ -77,22 +75,24 @@ const Overview = () => {
         }`}
       >
         <div className="flex flex-col gap-2 order-1">
-        <p className="text-sm text-gray-400">
-            2024
-          </p>
+          <p className="text-sm text-gray-400">2024</p>
           <h1 className="text-2xl md:text-4xl text-white tracking-tight flex items-center gap-2">
-
             Lyra
           </h1>
           <p className="text-gray-400 text-sm md:text-lg">
-            AI companion for productivity, backed by NVIDIA's Inception Program. $5,000+ raised.
+            AI companion for productivity, backed by NVIDIA's Inception Program.
+            $5,000+ raised.
           </p>
 
           <div className="pt-4">
-            <Link href="https://lyra.services" target="_blank" rel="noopener noreferrer">
-            <button className="bg-transparent border border-white hover:bg-white hover:text-black transition-all duration-200 text-white px-4 py-2 rounded-lg w-fit">
+            <Link
+              href="https://lyra.services"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="bg-transparent border border-white hover:bg-white hover:text-black transition-all duration-200 text-white px-4 py-2 rounded-lg w-fit">
                 View
-            </button>
+              </button>
             </Link>
           </div>
         </div>
@@ -125,22 +125,22 @@ const Overview = () => {
         }`}
       >
         <div className="flex flex-col gap-2 order-1">
-        <p className="text-sm text-gray-400">
-            2025
-          </p>
+          <p className="text-sm text-gray-400">2025</p>
           <h1 className="text-2xl md:text-4xl text-white tracking-tight flex items-center gap-2">
-
             Sunday
           </h1>
           <p className="text-gray-400 text-sm md:text-lg">
             AI-powered web, email, & calendar assistant. $6,000+ raised.
           </p>
           <div className="pt-4">
-            <Link href="https://sundays.services" target="_blank" rel="noopener noreferrer">
-            <button className="bg-transparent border border-white hover:bg-white hover:text-black transition-all duration-200 text-white px-4 py-2 rounded-lg w-fit">
-
+            <Link
+              href="https://sundays.services"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="bg-transparent border border-white hover:bg-white hover:text-black transition-all duration-200 text-white px-4 py-2 rounded-lg w-fit">
                 View
-            </button>
+              </button>
             </Link>
           </div>
         </div>
@@ -173,9 +173,7 @@ const Overview = () => {
         }`}
       >
         <div className="flex flex-col gap-2 order-1">
-        <p className="text-sm text-gray-400">
-            2024
-          </p>
+          <p className="text-sm text-gray-400">2024</p>
           <h1 className="text-2xl md:text-4xl text-white tracking-tight">
             AK Notch
           </h1>
@@ -184,10 +182,14 @@ const Overview = () => {
             300+ users.
           </p>
           <div className="pt-4">
-            <Link href="https://github.com/akeshwani2/AK-Notch" target="_blank" rel="noopener noreferrer">
-            <button className="bg-transparent border border-white hover:bg-white hover:text-black transition-all duration-200 text-white px-4 py-2 rounded-lg w-fit">
+            <Link
+              href="https://github.com/akeshwani2/AK-Notch"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="bg-transparent border border-white hover:bg-white hover:text-black transition-all duration-200 text-white px-4 py-2 rounded-lg w-fit">
                 View
-            </button>
+              </button>
             </Link>
           </div>
         </div>
