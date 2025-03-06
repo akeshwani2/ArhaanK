@@ -85,7 +85,7 @@ const Overview = () => {
             Lyra
           </h1>
           <p className="text-gray-400 text-sm md:text-lg">
-            AI companion for productivity, backed by NVIDIA's Inception Program.
+            AI companion for productivity, backed by NVIDIA's Inception Program. $5,000+ raised.
           </p>
 
           <div className="pt-4">
