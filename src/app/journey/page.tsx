@@ -54,6 +54,48 @@ const Experience = () => {
     <div className="items-center tracking-tight justify-items-center">
       <Header />
       <div className="animate-fade-in-up-2">
+      <div className="px-4 border-b  border-gray-600 border-opacity-50 md:px-0 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 container pb-10 pt-10 transition-opacity duration-500">
+          <div className="flex flex-col gap-2 order-1">
+            <p className="text-sm text-gray-400">2025</p>
+            <h1 className="text-2xl md:text-4xl text-white tracking-tight flex items-center gap-2">
+
+              Echo
+            </h1>
+            <p className="text-gray-400 text-sm md:text-lg">
+              Memory for AI.
+            </p>
+            <div className="pt-4">
+              <Link href="https://ev0.xyz" target="_blank" rel="noopener noreferrer">
+              <button className="bg-transparent border border-white hover:bg-white hover:text-black transition-all duration-200 text-white px-4 py-2 rounded-lg w-fit">
+
+                  View
+              </button>
+              </Link>
+            </div>
+          </div>
+          <div
+            className="order-2 px-2 cursor-pointer hover:scale-105 transition-all duration-300 border border-gray-600 border-opacity-50 rounded-lg"
+            onClick={() =>
+              setExpandedVideo(
+                "https://my-website-videos-akport.s3.us-east-1.amazonaws.com/My+Movie+4.mp4"
+              )
+            }
+          >
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="auto"
+              className="rounded-lg"
+            >
+              <source
+                src="https://my-website-videos-akport.s3.us-east-1.amazonaws.com/My+Movie+4.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+        </div>
         <div className="px-4 border-b border-gray-600 border-opacity-50 md:px-0 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 container pb-10 pt-10 transition-opacity duration-500">
           <div className="flex flex-col gap-2 order-1">
             <p className="text-sm text-gray-400">2024</p>
@@ -141,7 +183,7 @@ const Experience = () => {
           </div>
         </div>
 
-        <div className="px-4 border-b border-gray-600 border-opacity-50 md:px-0 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 container pb-10 pt-10 transition-opacity duration-500">
+        {/* <div className="px-4 border-b border-gray-600 border-opacity-50 md:px-0 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 container pb-10 pt-10 transition-opacity duration-500">
           <div className="flex flex-col gap-2 order-1">
             <p className="text-sm text-gray-400">2025</p>
             <h1 className="text-2xl md:text-4xl text-white tracking-tight flex items-center gap-2">
@@ -172,7 +214,7 @@ const Experience = () => {
               className="rounded-lg "
             />
           </div>
-        </div>
+        </div> */}
         <div className="px-4 border-b border-gray-600 border-opacity-50 md:px-0 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 container pb-10 pt-10 transition-opacity duration-500">
           <div className="flex flex-col gap-2 order-1">
             <p className="text-sm text-gray-400">2024</p>
