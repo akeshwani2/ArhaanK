@@ -125,7 +125,7 @@ const Experience = () => {
         {/* Resume */}
         <div className="order-2 group relative hover:scale-105 transition-all duration-300">
           <img
-            src="https://my-website-videos-akport.s3.us-east-1.amazonaws.com/resumeImage.png"
+            src="https://my-website-videos-akport.s3.us-east-1.amazonaws.com/ArhaanResume.png"
             alt="resume"
             className="h-[875px] mt-2 w-full object-contain group-hover:blur-sm transition-all duration-300"
           />
