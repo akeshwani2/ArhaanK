@@ -257,8 +257,20 @@ const Experience = () => {
             </video>
           </div>
         </div>
+        
         <div className="px-4 border-b flex flex-col md:flex-row border-gray-600 border-opacity-50 md:px-0 gap-10 md:gap-20 justify-between container pb-10 pt-10 transition-opacity duration-500">
-          <div className="flex flex-col gap-2 order-1">
+          
+        <div className="flex flex-col gap-2 order-1">
+            <p className="text-sm text-gray-400">2025</p>
+            <h1 className="text-2xl md:text-4xl text-white tracking-tight">
+              Headstarter
+            </h1>
+            <p className="text-gray-400 text-sm md:text-sm">
+              Software Engineering Intern.
+            </p>
+          </div>
+          
+          <div className="flex flex-col gap-2 order-2">
             <p className="text-sm text-gray-400">2024</p>
             <h1 className="text-2xl md:text-4xl text-white tracking-tight">
               JPMorgan Chase & Co.
@@ -268,16 +280,7 @@ const Experience = () => {
             </p>
           </div>
 
-          <div className="flex flex-col gap-2 order-2">
-            <p className="text-sm text-gray-400">2024</p>
-            <h1 className="text-2xl md:text-4xl text-white tracking-tight">
-              Cita
-            </h1>
-            <p className="text-gray-400 text-sm md:text-sm">
-              Software Engineering Intern.
-            </p>
-          </div>
-          <div className="flex flex-col gap-2 order-2">
+          <div className="flex flex-col gap-2 order-3">
             <p className="text-sm text-gray-400">2024</p>
             <h1 className="text-2xl md:text-4xl text-white tracking-tight">
               Freelance Work
