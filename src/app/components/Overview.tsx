@@ -68,6 +68,9 @@ const Overview = () => {
             in people's lives.
           </h1>
         </div>
+        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-pulse">
+          <div className="h-12 w-[1px] bg-gradient-to-b from-transparent via-white/20 to-white/40 animate-pulse-glow"></div>
+        </div>
       </div>
       <div
         className={`px-4 border-b border-t border-gray-600 border-opacity-50 md:px-0 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 container pb-10 pt-10 transition-opacity duration-500 ${
