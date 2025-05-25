@@ -16,8 +16,7 @@ export default function Home() {
   }, [pathname]);
 
   return (
-    <div className="min-h-screen flex flex-col items-center">
-      <Header />
+    <div className="min-h-screen bg-white">
       <Overview />
     </div>
   );

@@ -15,7 +15,7 @@ const Experience = () => {
     onClose: () => void;
   }) => (
     <div
-      className="fixed inset-0 bg-black bg-opacity-90 z-50 flex animate-fade-in-up-fast transition-opacity items-center justify-center p-4"
+      className="fixed inset-0 bg-white bg-opacity-90 z-50 flex animate-fade-in-up-fast transition-opacity items-center justify-center p-4"
       onClick={onClose}
     >
       <div className="w-full max-w-6xl border border-gray-600 border-opacity-50 rounded-lg">
@@ -32,7 +32,7 @@ const Experience = () => {
     onClose: () => void;
   }) => (
     <div
-      className="fixed inset-0 bg-black animate-fade-in-up-fast transition-opacity bg-opacity-90 z-50 flex items-center justify-center p-4"
+      className="fixed inset-0 bg-white animate-fade-in-up-fast transition-opacity bg-opacity-90 z-50 flex items-center justify-center p-4"
       onClick={onClose}
     >
       <div className="w-full border border-gray-600 border-opacity-50 rounded-lg px-2 max-w-6xl">
@@ -258,7 +258,7 @@ const Experience = () => {
           </div>
         </div>
         
-        <div className="px-4 border-b flex flex-col md:flex-row border-gray-600 border-opacity-50 md:px-0 gap-10 md:gap-20 justify-between container pb-10 pt-10 transition-opacity duration-500">
+        <div className="px-4 flex flex-col md:flex-row border-gray-600 border-opacity-50 md:px-0 gap-10 md:gap-20 justify-between container pb-10 pt-10 transition-opacity duration-500">
           
         <div className="flex flex-col gap-2 order-1">
             <p className="text-sm text-gray-400">2025</p>
@@ -304,11 +304,7 @@ const Experience = () => {
           onClose={() => setExpandedImage(null)}
         />
       )}
-      <div className="w-full md:px-24">
-        <div className="">
-          <Footer />
-        </div>
-      </div>
+      
     </div>
   );
 };

@@ -26,7 +26,7 @@ const Experience = () => {
     <div className="items-center tracking-tight justify-items-center">
       <Header />
 
-      <div className="px-4 animate-fade-in-up-2 border-b border-gray-600 border-opacity-50 md:px-0 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 container pb-10 pt-10 transition-opacity duration-500">
+      <div className="px-4 animate-fade-in-up-2 md:px-0 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 container pb-10 pt-10 transition-opacity duration-500">
         <div className="flex flex-col gap-2 order-1">
           <p className="text-sm text-gray-400">2024</p>
           <h1 className="text-xl md:text-2xl text-white tracking-tight flex items-center gap-2">
@@ -144,9 +144,7 @@ const Experience = () => {
           </div>
         </div>
       </div>
-      <div className="w-full md:px-24">
-        <Footer />
-      </div>
+   
       {expandedImage && (
         <ImageModal
           src={expandedImage}
