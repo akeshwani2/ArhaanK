@@ -5,7 +5,7 @@ import { Linkedin } from "lucide-react";
 
 const Overview = () => {
   return (
-    <div className="flex flex-col bg-white animate-fade-in-up duration-1000 px-12 md:px-60 md:py-40 py-44 tracking-tighter">
+    <div className="flex flex-col bg-white animate-fade-in-up duration-1000 px-12 md:px-60 md:py-40 py-36 tracking-tighter">
       <div className="text-black mb-16 text-6xl font-light tracking-tight">
         Arhaan Keshwani
       </div>
