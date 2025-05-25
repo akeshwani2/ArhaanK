@@ -23,7 +23,7 @@ const Overview = () => {
         — a true personal assistant.
       </div>
       <div className="text-xl md:text-2xl mb-12 font-light tracking-tight text-black/50 items-center animate-fade-in-up">
-        previously, i've worked on{" "}
+        some of my previous work/startups include - {" "}
         <a className="text-black" href="https://ev0.xyz" target="_blank">
           <span className="hover:scale-105 transition-transform duration-200 ease-in-out inline-block">
             echo,
