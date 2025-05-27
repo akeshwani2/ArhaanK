@@ -28,18 +28,6 @@ const Footer = () => {
             <Linkedin className="transition-all duration-200 hover:scale-105" />
           </Link>
         </div>
-        
-        <div>
-          <Link
-            href="https://github.com/akeshwani2"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-black transition-all duration-200 hover:scale-105"
-
-          >
-            <Github className=" transition-all duration-200  hover:scale-105" />
-          </Link>
-        </div>
       </div>
     </footer>
   );

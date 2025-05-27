@@ -51,13 +51,13 @@ const Experience = () => {
     </div>
   );
   return (
-    <div className="items-center tracking-tight justify-items-center">
+    <div className="items-center bg-white tracking-tight justify-items-center">
       <Header />
       <div className="animate-fade-in-up-2">
       <div className="px-4 border-b  border-gray-600 border-opacity-50 md:px-0 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 container pb-10 pt-10 transition-opacity duration-500">
           <div className="flex flex-col gap-2 order-1">
-            <p className="text-sm text-gray-400">2025</p>
-            <h1 className="text-2xl md:text-4xl text-white tracking-tight flex items-center gap-2">
+            <p className="text-sm text-black">2025</p>
+            <h1 className="text-2xl md:text-4xl text-black tracking-tight flex items-center gap-2">
 
               Echo
             </h1>

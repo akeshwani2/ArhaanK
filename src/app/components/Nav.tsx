@@ -17,28 +17,28 @@ const Nav = () => {
       <nav className='flex-1 flex justify-center items-center gap-8 text-xs md:text-sm tracking-tight sticky top-0 z-50 backdrop-blur-md pt-6 pb-6'>
           <Link 
             href='/' 
-            className={`relative underline-link hover:text-gray-400 ${activeRoute === '/' ? 'active' : ''}`}
+            className={`relative underline-link text-black hover:text-gray-400 ${activeRoute === '/' ? 'active' : ''}`}
             onClick={() => setActiveRoute('/')}
           >
             Overview
           </Link>
           <Link 
             href='/journey' 
-            className={`relative underline-link hover:text-gray-400 ${activeRoute === '/journey' ? 'active' : ''}`}
+            className={`relative underline-link text-black hover:text-gray-400 ${activeRoute === '/journey' ? 'active' : ''}`}
             onClick={() => setActiveRoute('/journey')}
           >
             Journey
           </Link>
           <Link 
             href='/accomplishments' 
-            className={`relative underline-link hover:text-gray-400 ${activeRoute === '/accomplishments' ? 'active' : ''}`}
+            className={`relative underline-link text-black hover:text-gray-400 ${activeRoute === '/accomplishments' ? 'active' : ''}`}
             onClick={() => setActiveRoute('/accomplishments')}
           >
             Accomplishments
           </Link>
           <Link 
             href='/contact' 
-            className={`relative underline-link hover:text-gray-400 ${activeRoute === '/contact' ? 'active' : ''}`}
+            className={`relative underline-link text-black hover:text-gray-400 ${activeRoute === '/contact' ? 'active' : ''}`}
             onClick={() => setActiveRoute('/contact')}
           >
             Chat

@@ -41,7 +41,10 @@ export default {
         'fade-in-up-3': 'fade-in-up 2s ease-out',
         'fade-in-up-4': 'fade-in-up 2.5s ease-out',
         'pulse-glow': 'pulse-glow 2s ease-in-out infinite'
-      }
+      },
+      fontFamily: {
+        instrumental: ['InstrumentalSerif', 'serif'],
+      },
     },
   },
   plugins: [],
